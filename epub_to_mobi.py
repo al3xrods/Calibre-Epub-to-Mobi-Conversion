@@ -3,8 +3,8 @@ import glob
 import shutil
 import time
 
-path = os.path.join("C:", "Users", "97254", "Downloads")
-moveto = os.path.join("C:", "Users", "97254", "Documents", "Calibre Books")
+path = os.path.join("Your Book's Path")
+moveto = os.path.join("Calibre Books's Path")
 
 files = [f for f in os.listdir(path) if f.endswith('.epub')]
 
@@ -20,7 +20,7 @@ except FileNotFoundError:
 
 #=================================================
 # Calibre Book Conversion
-os.system('start "" "' + os.path.join("C:", "Program Files", "Calibre2", "calibre.exe") + '"') #Open Calibre
+os.system('start "" "' + os.path.join("calibre.exe Path") + '"') #Open Calibre
 time.sleep(10)
 user_input = str(input('Transfer Books? (Y/N) ')).lower()
 
